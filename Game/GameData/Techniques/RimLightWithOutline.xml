@@ -1,0 +1,4 @@
+<technique vs="RimLight" ps="RimLight">
+    <pass name="base" />
+    <pass name="outline" vs="Outline" ps="Outline" psdefines="MASK" depthtest="always" depthwrite="false" />
+</technique>

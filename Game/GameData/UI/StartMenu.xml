@@ -1,0 +1,138 @@
+<element>
+
+    <attribute name="Name" value="StartMenu" />
+    <attribute name="Horiz Alignment" value="Center" />
+    <attribute name="Vert Alignment" value="Center" />
+    <attribute name="Tags">
+        <string value="Managed" />
+        <string value="StartMenu" />
+    </attribute>
+
+    <!-- Ширина -->
+
+    <element type="MyButton" style="DecreaseButton">
+        <attribute name="Name" value="WidthDecrease" />
+        <attribute name="Position" value="-280 -200" />
+    </element>
+
+    <element type="Text" style="CenteredText">
+        <attribute name="Name" value="WidthText" />
+        <attribute name="Position" value="0 -200" />
+        <attribute name="Text" value="Width: ??" />
+    </element>
+
+    <element type="MyButton" style="IncreaseButton">
+        <attribute name="Name" value="WidthIncrease" />
+        <attribute name="Position" value="280 -200" />
+    </element>
+
+    <!-- Высота -->
+
+    <element type="MyButton" style="DecreaseButton">
+        <attribute name="Name" value="HeightDecrease" />
+        <attribute name="Position" value="-280 -130" />
+    </element>
+
+    <element type="Text" style="CenteredText">
+        <attribute name="Name" value="HeightText" />
+        <attribute name="Position" value="0 -130" />
+        <attribute name="Text" value="Height: ??" />
+    </element>
+
+    <element type="MyButton" style="IncreaseButton">
+        <attribute name="Name" value="HeightIncrease" />
+        <attribute name="Position" value="280 -130" />
+    </element>
+
+    <!-- Количество цветов -->
+
+    <element type="MyButton" style="DecreaseButton">
+        <attribute name="Name" value="NumColorsDecrease" />
+        <attribute name="Position" value="-280 -60" />
+    </element>
+
+    <element type="Text" style="CenteredText">
+        <attribute name="Name" value="NumColorsText" />
+        <attribute name="Position" value="0 -60" />
+        <attribute name="Text" value="Num Colors: ?" />
+    </element>
+
+    <element type="MyButton" style="IncreaseButton">
+        <attribute name="Name" value="NumColorsIncrease" />
+        <attribute name="Position" value="280 -60" />
+    </element>
+
+    <!-- Население -->
+
+    <element type="MyButton" style="DecreaseButton">
+        <attribute name="Name" value="PopulationDecrease" />
+        <attribute name="Position" value="-280 10" />
+    </element>
+
+    <element type="Text" style="CenteredText">
+        <attribute name="Name" value="PopulationText" />
+        <attribute name="Position" value="0 10" />
+        <attribute name="Text" value="Population: ??" />
+    </element>
+
+    <element type="MyButton" style="IncreaseButton">
+        <attribute name="Name" value="PopulationIncrease" />
+        <attribute name="Position" value="280 10" />
+    </element>
+
+    <!-- Длина линии -->
+
+    <element type="MyButton" style="DecreaseButton">
+        <attribute name="Name" value="LineLengthDecrease" />
+        <attribute name="Position" value="-280 80" />
+    </element>
+
+    <element type="Text" style="CenteredText">
+        <attribute name="Name" value="LineLengthText" />
+        <attribute name="Position" value="0 80" />
+        <attribute name="Text" value="Line Length: ?" />
+    </element>
+
+    <element type="MyButton" style="IncreaseButton">
+        <attribute name="Name" value="LineLengthIncrease" />
+        <attribute name="Position" value="280 80" />
+    </element>
+
+    <!-- Диагональ -->
+
+    <element type="MyButton" style="DecreaseButton">
+        <attribute name="Name" value="DiagonalDecrease" />
+        <attribute name="Position" value="-280 150" />
+    </element>
+
+    <element type="Text" style="CenteredText">
+        <attribute name="Name" value="DiagonalText" />
+        <attribute name="Position" value="0 150" />
+        <attribute name="Text" value="Diagonal: ???" />
+    </element>
+
+    <element type="MyButton" style="IncreaseButton">
+        <attribute name="Name" value="DiagonalIncrease" />
+        <attribute name="Position" value="280 150" />
+    </element>
+
+    <!-- Кнопка "Старт" -->
+
+    <!-- Фон кнопки "Старт" -->
+    <element type="MyButton" style="CenteredButton">
+        <attribute name="Name" value="Start" />
+        <attribute name="Position" value="0 235" />
+        <attribute name="Size" value="256 100" />
+        <attribute name="Image Rect" value="0 0 256 100" />
+        <element type="Text" style="AutoLocalizableButtonText">
+            <attribute name="Text" value="START!" />
+            <attribute name="Position" value="-3 0" />
+        </element>
+        <!-- Блик и рамка кнопки "Старт" -->
+        <element type="BorderImage">
+            <attribute name="Size" value="256 100" />
+            <attribute name="Image Rect" value="0 100 256 200" />
+        </element>
+    </element>
+
+</element>

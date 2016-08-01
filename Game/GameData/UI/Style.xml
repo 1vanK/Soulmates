@@ -1,0 +1,197 @@
+<elements>
+
+    <!-- Текстовые стили. -->
+
+    <element type="Text">
+        <attribute name="Font" value="Font;Fonts/Ubuntu-BI.ttf" />
+        <attribute name="Font Size" value="40" />
+        <attribute name="Color" value="1 1 1 1" />
+        <attribute name="Text Effect" value="Stroke" />
+        <attribute name="Stroke Thickness" value="2" />
+        <attribute name="Round Stroke" value="true" />
+    </element>
+
+    <element type="ScoreText" style="Text">
+        <attribute name="Horiz Alignment" value="Left" />
+        <attribute name="Vert Alignment" value="Top" />
+        <attribute name="Tags">
+            <string value="Managed" />
+            <string value="Gameplay" />
+            <string value="GameOver" />
+        </attribute>
+    </element>
+
+    <element type="RecordText" style="Text">
+        <attribute name="Horiz Alignment" value="Right" />
+        <attribute name="Vert Alignment" value="Top" />
+        <attribute name="Position" value="-10 0" />
+    </element>
+
+    <element type="CenteredText" style="Text">
+        <attribute name="Horiz Alignment" value="Center" />
+        <attribute name="Vert Alignment" value="Center" />
+    </element>
+
+    <element type="AutoLocalizableCenteredText" style="CenteredText">
+        <attribute name="Auto Localizable" value="true" />
+    </element>
+
+    <element type="ButtonText">
+        <attribute name="Font" value="Font;Fonts/Ubuntu-BI.ttf" />
+        <attribute name="Font Size" value="40" />
+        <attribute name="Color" value="1 1 1 1" />
+        <attribute name="Text Effect" value="Shadow" />
+        <attribute name="Shadow Offset" value="0 5" />
+        <attribute name="Effect Color" value="0 0 0 0.5" />
+        <attribute name="Horiz Alignment" value="Center" />
+        <attribute name="Vert Alignment" value="Center" />
+    </element>
+
+    <element type="AutoLocalizableButtonText" style="ButtonText">
+        <attribute name="Auto Localizable" value="true" />
+    </element>
+
+    <!-- Цвета кнопок. -->
+
+    <element type="BorderImage" >
+        <attribute name="Texture" value="Texture2D;Textures/GameUI.png" />
+        <attribute name="Blend Mode" value="alpha" />
+    </element>
+
+    <!-- В игре используется производный тип MyButton, а не Button. -->
+    <element type="Button" style="BorderImage">
+        <attribute name="Focus Mode" value="ResetFocus" />
+    </element>
+
+    <element type="CenteredButton" style="Button">
+        <attribute name="Horiz Alignment" value="Center" />
+        <attribute name="Vert Alignment" value="Center" />
+    </element>
+
+    <element type="GreenButton" style="Button">
+        <attribute name="Normal Color" value="0 0.5 0" />
+        <attribute name="Hover Color" value="0 1 0" />
+        <attribute name="Pressed Color" value="1 1 0" />
+    </element>
+
+    <element type="GreenCenteredButton" style="CenteredButton">
+        <attribute name="Normal Color" value="0 0.5 0" />
+        <attribute name="Hover Color" value="0 1 0" />
+        <attribute name="Pressed Color" value="1 1 0" />
+    </element>
+
+    <element type="VolumeButton" style="Button">
+        <attribute name="Size" value="70 70" />
+        <attribute name="Horiz Alignment" value="Right" />
+        <attribute name="Vert Alignment" value="Bottom" />
+        <attribute name="Normal Color" value="0.4 0.4 0.4" />
+        <attribute name="Hover Color" value="0.7 0.7 0.7" />
+        <attribute name="Pressed Color" value="0.7 0.7 0.7" />
+    </element>
+
+    <!-- Формы кнопок. -->
+
+    <element type="SquareButton" style="Button">
+        <attribute name="Size" value="70 70" />
+        <attribute name="Image Rect" value="0 270 70 340" />
+    </element>
+
+    <element type="CenteredSquareButton" style="SquareButton">
+        <attribute name="Horiz Alignment" value="Center" />
+        <attribute name="Vert Alignment" value="Center" />
+    </element>
+
+    <element type="CircleGreenCenteredButton" style="GreenCenteredButton">
+        <attribute name="Size" value="64 64" />
+        <attribute name="Image Rect" value="256 0 320 64" />
+    </element>
+
+    <element type="CircleGlare" style="BorderImage">
+        <attribute name="Size" value="64 64" />
+        <attribute name="Image Rect" value="256 64 320 128" />
+    </element>
+
+    <element type="VolumeButton0" style="VolumeButton">
+        <attribute name="Image Rect" value="0 200 70 270" />
+    </element>
+
+    <element type="VolumeButton1" style="VolumeButton">
+        <attribute name="Image Rect" value="70 200 140 270" />
+    </element>
+
+    <element type="VolumeButton2" style="VolumeButton">
+        <attribute name="Image Rect" value="140 200 210 270" />
+    </element>
+
+    <element type="VolumeButton3" style="VolumeButton">
+        <attribute name="Image Rect" value="210 200 280 270" />
+    </element>
+
+    <!-- Стили кнопок. -->
+
+    <element type="DecreaseButton" style="CircleGreenCenteredButton">
+        <element type="Text" style="ButtonText">
+            <attribute name="Position" value="-3 -4" />
+            <attribute name="Text" value="&lt;" />
+        </element>
+        <element type="BorderImage" style="CircleGlare" />
+    </element>
+
+    <element type="IncreaseButton" style="CircleGreenCenteredButton">
+        <element type="Text" style="ButtonText">
+            <attribute name="Position" value="-3 -4" />
+            <attribute name="Text" value="&gt;" />
+        </element>
+        <element type="BorderImage" style="CircleGlare" />
+    </element>
+
+    <element type="LangButton" style="GreenButton">
+        <attribute name="Size" value="110 84" />
+        <attribute name="Image Rect" value="320 0 430 84" />
+        <attribute name="Horiz Alignment" value="Left" />
+        <attribute name="Vert Alignment" value="Bottom" />
+        <attribute name="Position" value="4 -4" />
+        <element type="Text" style="AutoLocalizableButtonText">
+            <attribute name="Position" value="-4 -2" />
+            <attribute name="Text" value="Lang" />
+        </element>
+        <element type="BorderImage">
+            <attribute name="Size" value="110 84" />
+            <attribute name="Image Rect" value="320 84 430 168" />
+        </element>
+    </element>
+
+    <element type="ReturnButton" style="SquareButton">
+        <attribute name="Horiz Alignment" value="Left" />
+        <attribute name="Vert Alignment" value="Center" />
+        <attribute name="Position" value="4 0" />
+        <attribute name="Tags">
+            <string value="Managed" />
+            <string value="Gameplay" />
+            <string value="GameOver" />
+        </attribute>
+        <element type="BorderImage">
+            <attribute name="Size" value="70 70" />
+            <attribute name="Image Rect" value="420 200 490 270" />
+        </element>
+    </element>
+
+    <!-- В игре стиль этого элемента меняется на VolumeButton<ЦИФРА>. -->
+    <element type="SoundButton" style="VolumeButton">
+        <attribute name="Position" value="-4 -76" />
+        <element type="BorderImage">
+            <attribute name="Size" value="70 70" />
+            <attribute name="Image Rect" value="280 200 350 270" />
+        </element>
+    </element>
+
+    <!-- В игре стиль этого элемента меняется на VolumeButton<ЦИФРА>. -->
+    <element type="MusicButton" style="VolumeButton">
+        <attribute name="Position" value="-4 -4" />
+        <element type="BorderImage">
+            <attribute name="Size" value="70 70" />
+            <attribute name="Image Rect" value="350 200 420 270" />
+        </element>
+    </element>
+
+</elements>

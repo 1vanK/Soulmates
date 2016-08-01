@@ -1,0 +1,54 @@
+{
+	"Lang":{
+		"en":"EN",
+		"ru":"RU"
+	},
+	"Score":{
+		"en":"Score",
+		"ru":"Счёт"
+	},
+	"Record":{
+		"en":"Record",
+		"ru":"Рекорд"
+	},
+	"Width":{
+		"en":"Width",
+		"ru":"Ширина"
+	},
+	"Height":{
+		"en":"Height",
+		"ru":"Высота"
+	},
+	"Num Colors":{
+		"en":"Num Colors",
+		"ru":"Число цветов"
+	},
+	"Population":{
+		"en":"Population",
+		"ru":"Население"
+	},
+	"Line Length":{
+		"en":"Line Length",
+		"ru":"Длина линии"
+	},
+	"Diagonal":{
+		"en":"Diagonal",
+		"ru":"Диагональ"
+	},
+	"ON":{
+		"en":"ON",
+		"ru":"ВКЛ"
+	},
+	"OFF":{
+		"en":"OFF",
+		"ru":"ВЫКЛ"
+	},
+	"Game Over":{
+		"en":"Game Over",
+		"ru":"Игра окончена"
+	},
+	"START!":{
+		"en":"START!",
+		"ru":"СТАРТ!"
+	}
+}

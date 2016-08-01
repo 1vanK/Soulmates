@@ -1,0 +1,25 @@
+<element>
+
+    <attribute name="Horiz Alignment" value="Center" />
+    <attribute name="Vert Alignment" value="Center" />
+    
+    <attribute name="Tags">
+        <string value="Managed" />
+        <string value="GameOver" />
+    </attribute>
+
+    <element type="Text" style="AutoLocalizableCenteredText">
+        <attribute name="Position" value="0 -40" />
+        <attribute name="Text" value="Game Over" />
+    </element>
+    
+    <element type="MyButton" style="CenteredSquareButton">
+        <attribute name="Name" value="ReplayButton" />
+        <attribute name="Position" value="0 40" />
+        <element type="BorderImage">
+            <attribute name="Size" value="70 70" />
+            <attribute name="Image Rect" value="280 270 350 340" />
+        </element>
+    </element>
+    
+</element>

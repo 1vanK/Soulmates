@@ -1,0 +1,7 @@
+<material>
+    <technique name="Techniques/RimLightWithOutline.xml" />
+    <parameter name="MatDiffColor" value="1 1 1 1" />
+
+    <parameter name="OutlineColor" value="1 1 1 0" />
+    <parameter name="OutlineEnable" value="false" />
+</material>
