@@ -1,3 +1,5 @@
+*Более актуальная версия (и с другой лицензией) находится тут: <https://github.com/urho3d-learn/soulmates>.*
+
 # Soulmates
 
 A compiled version of the game is placed in Game folder.
